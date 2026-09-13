@@ -1,7 +1,7 @@
 [project]
 name = "camera-app"
 version = "0.1.0"
-description = "Détection de balles rouges et affichage caméra sur Raspberry Pi"
+description = "Banc d'essai matériel Raspberry Pi 5 (caméra, audio, LEDs, GPS, assistant vocal)"
 readme = "README.md"
 requires-python = ">=3.12"
 dependencies = [
