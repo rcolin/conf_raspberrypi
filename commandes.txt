@@ -1,3 +1,10 @@
 sudo sed -i 's/^camera_auto_detect=0/camera_auto_detect=1/' /boot/firmware/config.txt
 sudo sed -i '/^dtoverlay=ov5647,cam0$/d' /boot/firmware/config.txt
 sudo reboot
+
+# Re-probe du codec WM8960 après branchement du HAT
+sudo sh -c 'echo 1-001a > /sys/bus/i2c/drivers/wm8960/bind'
+aplay -l && arecord -l
+
+# Appliquer l'état ALSA (réglages micros)
+sudo alsactl --file=/etc/wm8960-soundcard/wm8960_asound.state restore
