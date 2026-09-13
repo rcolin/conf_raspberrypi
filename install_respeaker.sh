@@ -32,7 +32,7 @@ fi
 
 add_line() {
     local entry="$1"
-    if grep -qF "$entry" "$CONFIG"; then
+    if grep -qxF "$entry" "$CONFIG"; then
         echo "  déjà présent : ${entry}"
     else
         echo "$entry" >> "$CONFIG"

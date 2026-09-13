@@ -8,3 +8,7 @@ aplay -l && arecord -l
 
 # Appliquer l'état ALSA (réglages micros)
 sudo alsactl --file=/etc/wm8960-soundcard/wm8960_asound.state restore
+
+# Activer le SPI pour les LEDs APA102
+sudo sed -i 's/^#dtparam=spi=on$/dtparam=spi=on/' /boot/firmware/config.txt
+sudo reboot

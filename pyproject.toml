@@ -11,6 +11,7 @@ test = "camera_app:main"
 camera-live = "camera_app.camera_live:main"
 balle-rouge = "camera_app.balle_rouge:main"
 micro-test = "camera_app.micro_test:main"
+led-test = "camera_app.led_test:main"
 
 [build-system]
 requires = ["uv_build>=0.12.13,<0.13.0"]
