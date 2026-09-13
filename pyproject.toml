@@ -1,0 +1,16 @@
+[project]
+name = "camera-app"
+version = "0.1.0"
+description = "Détection de balles rouges et affichage caméra sur Raspberry Pi"
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = ["opencv-python>=4.11.0"]
+
+[project.scripts]
+test = "camera_app:main"
+camera-live = "camera_app.camera_live:main"
+balle-rouge = "camera_app.balle_rouge:main"
+
+[build-system]
+requires = ["uv_build>=0.12.13,<0.13.0"]
+build-backend = "uv_build"

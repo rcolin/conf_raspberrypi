@@ -1,0 +1,3 @@
+sudo sed -i 's/^camera_auto_detect=0/camera_auto_detect=1/' /boot/firmware/config.txt
+sudo sed -i '/^dtoverlay=ov5647,cam0$/d' /boot/firmware/config.txt
+sudo reboot
