@@ -1,0 +1,8 @@
+DOCUMENTATION OFFICIELLE KEYESTUDIO ReSpeaker 2-Mic Pi HAT V1.0 (KS0314)
+https://docs.keyestudio.com/projects/KS0314/en/latest/docs/KS0314.html
+
+CODE SOURCE / GITHUB OFFICIEL KS0314
+https://github.com/keyestudio/KS0314-keyestudio-ReSpeaker-2-Mic-Pi-HAT-V1.0
+
+PAGE PRODUIT KEYESTUDIO
+https://www.keyestudio.com/products/keyestudio-5v-respeaker-2-mic-pi-hat-v10-expansion-board-for-raspberry-pi-3b-4b
