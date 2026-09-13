@@ -12,3 +12,9 @@ sudo alsactl --file=/etc/wm8960-soundcard/wm8960_asound.state restore
 # Activer le SPI pour les LEDs APA102
 sudo sed -i 's/^#dtparam=spi=on$/dtparam=spi=on/' /boot/firmware/config.txt
 sudo reboot
+
+# Assistant vocal local (llama.cpp + Ministral 3 3B + vosk)
+sudo ./install_llm.sh
+sudo systemctl start ministral.service
+curl http://127.0.0.1:8080/v1/models
+cd /home/rcollin/test && uv run voice-assistant --no-llm
